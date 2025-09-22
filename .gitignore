@@ -1,0 +1,18 @@
+﻿# Dependencias y builds
+node_modules/
+dist/
+*.log
+
+# Vite/React
+.vite/
+.cache/
+
+# Entornos
+.env
+.env.*
+backend/.env
+
+# SO/IDE
+.DS_Store
+Thumbs.db
+.vscode/
