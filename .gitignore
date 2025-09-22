@@ -1,18 +1,13 @@
-﻿# Dependencias y builds
-node_modules/
+﻿node_modules/
 dist/
-*.log
-
-# Vite/React
 .vite/
 .cache/
-
-# Entornos
+.eslintcache
 .env
 .env.*
 backend/.env
-
-# SO/IDE
+logs/
+*.log
+.vscode/
 .DS_Store
 Thumbs.db
-.vscode/
