@@ -202,12 +202,12 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="relative h-64 rounded-xl overflow-hidden">
+        <div className="relative h-80 rounded-xl overflow-hidden">
           <img
             src="images/professional-business-consultation-contact.webp"
             alt="Consultoría profesional de negocios para contacto"
             loading="lazy"
-            className="w-[600px] h-[256px] object-cover"
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"></div>
         </div>

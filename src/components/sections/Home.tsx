@@ -60,7 +60,7 @@ const Home = () => {
                   alt="Equipo trabajando con tecnología moderna"
                   fetchPriority="high"
                   decoding="async"
-                  className="rounded-2xl shadow-xl w-[380px] h-[200px] md:w-[608px] md:h-[320px] object-cover md:mr-8 md:mt-14"
+                  className="rounded-2xl shadow-xl w-[380px] h-[240px] md:w-[608px] md:h-[380px] object-cover object-center md:mr-8 md:mt-14"
                 />
               </div>
             </div>
