@@ -16,15 +16,15 @@ const About = () => {
                   <div className="cascade-item cascade-delay-1 space-y-3 md:translate-y-14">
                     {/* Título simple */}
                     <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight font-serif break-words">
-                      <span className="block">Transformamos</span>
-                      <span className="text-cyan-300 block">tu visión</span>
+                      <span className="block">Construimos</span>
+                      <span className="text-cyan-300 block">tu futuro digital</span>
                     </h1>
                     {/* Párrafos simples */}
                     <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                      Con décadas de experiencia combinada, construimos el futuro tecnológico de tu empresa. Conoce al equipo que convierte desafíos complejos en soluciones innovadoras
+                      Especialistas en infraestructura digital con más de una década de experiencia. Conoce al equipo que convierte ideas tecnológicas en realidades sólidas
                     </p>
                     <p className="text-sm sm:text-base text-slate-400">
-                      Cada proyecto es una oportunidad de demostrar nuestra pasión por la excelencia tecnológica y el crecimiento empresarial
+                      Cada proyecto digital es una oportunidad de demostrar nuestra pasión por la excelencia técnica y el crecimiento online
                     </p>
                   </div>
                 </div>
@@ -56,10 +56,10 @@ const About = () => {
                   Nuestros Valores
                 </div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 font-serif">
-                  Lo que nos <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">define</span>
+                  Nuestra <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">filosofía</span>
                 </h2>
                 <p className="text-base md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-                  Los pilares fundamentales que guían cada uno de nuestros proyectos y relaciones con clientes
+                  Los principios que guían cada infraestructura tecnológica que construimos y cada relación que establecemos
                 </p>
               </div>
 
@@ -74,8 +74,8 @@ const About = () => {
                     </div>
                     <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Misión</h3>
                     <p className="text-sm md:text-base text-slate-300 leading-relaxed group-hover:text-slate-200">
-                      Proveer soluciones tecnológicas innovadoras que impulsen la transformación digital de nuestros clientes, 
-                      brindando servicios de calidad con un enfoque personalizado y compromiso constante.
+                      Construir infraestructuras tecnológicas robustas y escalables que impulsen la transformación digital de nuestros clientes, 
+                      brindando soluciones de calidad con un enfoque personalizado y compromiso constante.
                     </p>
                   </div>
                 </div>
@@ -89,8 +89,8 @@ const About = () => {
                     </div>
                     <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Visión</h3>
                     <p className="text-sm md:text-base text-slate-300 leading-relaxed group-hover:text-slate-200">
-                      Ser reconocidos como líderes en consultoría tecnológica, siendo referentes en innovación, 
-                      excelencia en servicio y creadores de soluciones que transformen el panorama digital de América Latina.
+                      Ser reconocidos como líderes en infraestructura digital, siendo referentes en innovación, 
+                      excelencia técnica y creadores de soluciones tecnológicas que transformen el panorama digital de América Latina.
                     </p>
                   </div>
                 </div>
@@ -106,23 +106,23 @@ const About = () => {
                     <div className="space-y-2 md:space-y-3 text-left">
                       <div className="flex items-center">
                         <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-slate-300">Innovación constante</span>
+                        <span className="text-sm md:text-base text-slate-300">Arquitectura digital innovadora</span>
                       </div>
                       <div className="flex items-center">
                         <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-slate-300">Compromiso con resultados</span>
+                        <span className="text-sm md:text-base text-slate-300">Compromiso con la escalabilidad</span>
                       </div>
                       <div className="flex items-center">
                         <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-slate-300">Transparencia y honestidad</span>
+                        <span className="text-sm md:text-base text-slate-300">Seguridad digital como prioridad</span>
                       </div>
                       <div className="flex items-center">
                         <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-slate-300">Trabajo en equipo</span>
+                        <span className="text-sm md:text-base text-slate-300">Colaboración técnica</span>
                       </div>
                       <div className="flex items-center">
                         <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-slate-300">Excelencia en servicio</span>
+                        <span className="text-sm md:text-base text-slate-300">Excelencia en infraestructura</span>
                       </div>
                     </div>
                   </div>
@@ -138,32 +138,33 @@ const About = () => {
                 Nuestro equipo
               </span>
               <h3 className="text-3xl md:text-4xl font-bold text-white mt-4 font-serif">
-                Las personas detrás de <span className="text-cyan-300">Baseit</span>
+                Las personas detrás de <span className="text-cyan-300">InfraCore</span>
               </h3>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-3">
-                Contamos con miembros de distinto nivel de experiencia que se asignan, dependiendo la complejidad y
-                urgencia de cada tarea.
+                Contamos con especialistas de distintos niveles de experiencia en infraestructura digital que se asignan, 
+                dependiendo la complejidad y urgencia de cada proyecto.
               </p>
               <div className="h-1 w-16 bg-cyan-400 rounded-full mx-auto mt-5"></div>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
   {[
-    { name: "José Maciel", role: "Sap basis", image: "images/José Maciel.webp" },
-    { name: "Luciano Soria", role: "Sap basis", image: "images/Luciano Soria.webp" },
-    { name: "John Escobar", role: "Sap basis", image: "images/John Escobar.webp" },
-    { name: "Mauricio Maciel", role: "Sap basis", image: "images/Mauricio Maciel.webp" },
-    { name: "Cristian Maciel", role: "Sap basis", image: "images/Cristian Maciel.webp" },
-    { name: "David Solaliga", role: "Sap basis", image: "images/David Solaliga.webp" },
-    { name: "Nicolás Aquino", role: "Sap basis", image: "images/Nicolas Aquino.webp" },
-    { name: "Antonella Fernández", role: "Sap basis", image: "images/Antonella Fernández.webp" },
-    { name: "Agustín Córdoba", role: "Sap basis", image: "images/Agustin Cordoba.webp" },
-    { name: "Verónica Vega", role: "Sap basis", image: "images/Veronica Vega.webp" },
-    { name: "Leonardo Solaliga", role: "Sap basis", image: "images/Leonardo Solaliga.webp" },
-    { name: "Jose Luis Gómez", role: "Sap basis", image: "images/Jose Luis Gomez.webp" },
-    { name: "Julián Constantino", role: "Sap basis", image: "images/Julian Constantino.webp" },
+    // Hombres (orden alfabético)
+    { name: "Alejandro Martínez", role: "Arquitecto de Sistemas", image: "images/People1.webp" },
+    { name: "Carlos Rodríguez", role: "Especialista en Redes", image: "images/People2.webp" },
+    { name: "Diego Fernández", role: "Ingeniero de DevOps", image: "images/People3.webp" },
+    { name: "Eduardo López", role: "Consultor Senior", image: "images/People4.webp" },
+    { name: "Fernando García", role: "Especialista en Seguridad", image: "images/People6.webp" },
+    { name: "Gabriel Silva", role: "Administrador de Bases de Datos", image: "images/People7.webp" },
+    { name: "Héctor Morales", role: "Especialista en Cloud", image: "images/People8.webp" },
+    { name: "Ignacio Torres", role: "Ingeniero de Infraestructura", image: "images/People11.webp" },
+    { name: "Javier Herrera", role: "Líder Técnico", image: "images/People12.webp" },
+    // Mujeres (orden alfabético)
+    { name: "Ana Patricia Vega", role: "Directora de Proyectos", image: "images/People5F.webp" },
+    { name: "Carmen Elena Ruiz", role: "Especialista en Migración", image: "images/People9F.webp" },
+    { name: "Diana Sofía Mendoza", role: "Consultora en Arquitectura", image: "images/People10F.webp" },
   ].map((member, index) => (
-    <div key={index} className={`cascade-item cascade-delay-${index + 1} text-center group`}>
+    <div key={index} className={`cascade-item cascade-delay-${index + 1} text-center group bg-slate-900/50 rounded-3xl p-6 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:shadow-lg`}>
       <div className="relative mb-4 overflow-hidden rounded-2xl">
         <img
           src={member.image || "/placeholder.svg"}
@@ -173,7 +174,7 @@ const About = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
       </div>
-      <h4 className="font-semibold text-gray-900 text-lg">{member.name}</h4>
+      <h4 className="font-semibold text-white text-lg mb-2">{member.name}</h4>
       <p className="text-cyan-300 font-medium">{member.role}</p>
       </div>
     ))}

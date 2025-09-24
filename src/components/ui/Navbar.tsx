@@ -75,8 +75,8 @@ const Navbar: React.FC = () => {
             onClick={handleLogoClick}
           >
             <img 
-              src="/src/assets/Identidad Corporativa/Logo_BaseIT_ap_color_positivo_RGB.png" 
-              alt="BaseIT"
+              src="/favicon.png" 
+              alt="InfraCore"
               className="h-16 w-auto"
             />
           </Link>

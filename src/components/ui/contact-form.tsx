@@ -177,11 +177,11 @@ export default function ContactForm() {
         <h3 className="text-2xl font-bold text-white mb-2">¡Mensaje Enviado!</h3>
         <p className="text-slate-300 mb-6">Nos pondremos en contacto contigo pronto.</p>
 
-        {/* Logo BaseIT en estado de éxito */}
+        {/* Logo InfraCore en estado de éxito */}
         <div className="border-t border-slate-800 pt-6">
           <img 
-            src="/src/assets/Identidad Corporativa/Logo_BaseIT_cuad_color_positivo_RGB.png" 
-            alt="BaseIT"
+            src="/favicon.png" 
+            alt="InfraCore"
             className="h-8 w-auto mx-auto opacity-70"
           />
         </div>
@@ -195,10 +195,10 @@ export default function ContactForm() {
       <div className="space-y-8">
         {/* Title and content above the image */}
         <div>
-          <h3 className="text-3xl font-bold text-white mb-4 font-serif">Hablemos de tu proyecto</h3>
+          <h3 className="text-3xl font-bold text-white mb-4 font-serif">Hablemos de tu proyecto digital</h3>
           <p className="text-lg text-slate-300 leading-relaxed">
-            Estamos aquí para ayudarte a optimizar tu infraestructura IT. Contacta con nuestros especialistas y descubre
-            cómo podemos impulsar el crecimiento de tu empresa.
+            Estamos aquí para ayudarte a construir la infraestructura tecnológica perfecta. Contacta con nuestros especialistas y descubre
+            cómo podemos potenciar tu presencia online.
           </p>
         </div>
 
@@ -213,8 +213,8 @@ export default function ContactForm() {
         </div>
 
         <div className="bg-blue-600/10 p-6 rounded-xl border border-slate-800">
-          <h4 className="font-semibold text-cyan-300 mb-2">Tiempo de respuesta</h4>
-          <p className="text-slate-300">Respondemos en menos de 24 horas</p>
+          <h4 className="font-semibold text-cyan-300 mb-2">Respuesta rápida</h4>
+          <p className="text-slate-300">Analizamos tu proyecto digital en menos de 24 horas</p>
         </div>
       </div>
 
@@ -311,12 +311,12 @@ export default function ContactForm() {
               }`}
             >
               <option value="">Selecciona un servicio</option>
-              <option value="mantenimiento-preventivo">Mantenimiento Preventivo</option>
-              <option value="mantenimiento-correctivo">Mantenimiento Correctivo</option>
-              <option value="soporte-sap">Soporte SAP</option>
-              <option value="auditoria">Auditoría y Seguridad</option>
-              <option value="migracion-nube">Migración a la Nube</option>
-              <option value="asesoria">Asesoría</option>
+              <option value="infraestructura-digital">Infraestructura Digital</option>
+              <option value="seguridad-digital">Seguridad Digital y Auditoría</option>
+              <option value="soporte-plataformas">Soporte de Plataformas</option>
+              <option value="migracion-cloud">Migración Digital a la Nube</option>
+              <option value="consultoria-arquitectura">Consultoría en Arquitectura Digital</option>
+              <option value="implementaciones">Implementaciones de Infraestructura</option>
               <option value="otro">Otro</option>
             </select>
             <ErrorMessage error={errors.service} />
@@ -335,7 +335,7 @@ export default function ContactForm() {
               className={`w-full px-4 py-3 border rounded-xl bg-slate-800 text-slate-100 placeholder-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none ${
                 errors.message ? 'border-red-500 bg-red-500/10' : 'border-slate-700'
               }`}
-              placeholder="Cuéntanos sobre tu proyecto o necesidades..."
+              placeholder="Cuéntanos sobre tu proyecto digital o necesidades de infraestructura..."
             />
             <ErrorMessage error={errors.message} />
           </div>

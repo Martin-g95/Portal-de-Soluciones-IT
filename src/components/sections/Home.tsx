@@ -22,17 +22,16 @@ const Home = () => {
                     Somos{" "}
                   </span>
                   <span className="text-cyan-300 inline-block">
-                    Baseit
+                    InfraCore
                   </span>
                 </h1>
                 
                 {/* Párrafos simples */}
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                  Nombre derivado de nuestra iniciativa original, base o cimientos de IT. Esta figura nos ha permitido
-                  crecer e incorporar nuevos talentos sumando décadas de experiencia.
+                  Especialistas en infraestructura digital con más de una década de experiencia. Construimos, optimizamos y mantenemos la base tecnológica que impulsa tu presencia online.
                 </p>
                 <p className="text-sm sm:text-base text-slate-400">
-                  Brindamos soluciones mediante un pool de recursos, ofreciendo así el mejor servicio en nuestra área.
+                  Tu proyecto digital merece una base sólida. Trabajamos para que tu crecimiento online sea constante y confiable.
                 </p>
               </div>
               
@@ -95,35 +94,35 @@ const Home = () => {
             {[
               {
                 icon: Shield,
-                title: "Auditoría, identidad digital y seguridad",
-                description: "Protección integral de sus sistemas y datos empresariales",
+                title: "Arquitectura de Infraestructura Digital",
+                description: "Diseñamos y construimos infraestructuras escalables y robustas para tu crecimiento digital",
                 color: "from-blue-500 to-blue-600",
                 bgColor: "bg-blue-500/10",
                 hoverColor: "hover:bg-blue-500/20",
-                serviceId: "auditoria"
+                serviceId: "arquitectura"
               },
               {
                 icon: Server,
-                title: "Soporte especializado SAP, Oracle, Unix, Linux y Windows",
-                description: "Especialistas en sistemas SAP y plataformas críticas",
+                title: "Optimización de Rendimiento Web",
+                description: "Aceleramos tu presencia online con tecnologías de vanguardia y optimización avanzada",
                 color: "from-cyan-500 to-cyan-600",
                 bgColor: "bg-cyan-500/10",
                 hoverColor: "hover:bg-cyan-500/20",
-                serviceId: "soporte"
+                serviceId: "optimizacion"
               },
               {
                 icon: Users,
-                title: "Asesoría IT especializada",
-                description: "Consultoría para optimizar procesos y decisiones tecnológicas",
+                title: "Consultoría en Transformación Digital",
+                description: "Te acompañamos en la evolución tecnológica de tu empresa con estrategias personalizadas",
                 color: "from-blue-600 to-cyan-500",
                 bgColor: "bg-blue-600/10",
                 hoverColor: "hover:bg-blue-600/20",
-                serviceId: "asesoria"
+                serviceId: "transformacion"
               },
               {
                 icon: Cloud,
-                title: "Migración a la nube",
-                description: "Transición segura y eficiente hacia tecnologías cloud",
+                title: "Migración y Modernización Cloud",
+                description: "Transición inteligente hacia la nube con máxima seguridad y eficiencia operativa",
                 color: "from-cyan-500 to-cyan-600",
                 bgColor: "bg-cyan-500/10",
                 hoverColor: "hover:bg-cyan-500/20",

@@ -42,11 +42,11 @@ const Services = () => {
             <div className="space-y-4 md:space-y-6">
               <div className="cascade-item cascade-delay-1 space-y-12 md:translate-y-14">
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight font-serif break-words">
-                  <span className="inline-block">Nuestros Servicios{" "}</span>
-                  <span className="text-cyan-300 inline-block">Especializados</span>
+                  <span className="inline-block">Infraestructura{" "}</span>
+                  <span className="text-cyan-300 inline-block">Digital Completa</span>
                 </h1>
                 <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-                  Explora nuestras diferentes áreas de especialización en infraestructura SAP y descubre cómo podemos transformar tu negocio
+                  Descubre nuestras soluciones integrales de infraestructura tecnológica y cómo podemos potenciar tu presencia online
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@ const Services = () => {
               <div className="w-full max-w-[700px]">
                 <img
                   src="/images/services-it-infrastructure-consulting.webp"
-                  alt="Consultoría especializada en infraestructura IT"
+                  alt="Consultoría especializada en infraestructura digital"
                   loading="lazy"
                   className="rounded-2xl shadow-xl w-[380px] h-[200px] md:w-[608px] md:h-[320px] object-cover md:mr-8 md:mt-14"
                 />
@@ -67,12 +67,12 @@ const Services = () => {
       {/* Eliminé el div contenedor extra */}
       <ServicesTabs />
 
-      <section className="py-20 bg-blue-600 w-full">
+      <section className="py-20 bg-blue-600/30 w-full border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto space-y-8">
-            <h2 className="text-4xl font-bold text-white font-serif">¿Listo para optimizar su infraestructura IT?</h2>
+            <h2 className="text-4xl font-bold text-white font-serif">¿Listo para revolucionar tu infraestructura digital?</h2>
             <p className="text-xl text-cyan-100/90">
-              Contacte con nuestros especialistas y descubra cómo podemos ayudar a su empresa a crecer
+              Contacta con nuestros especialistas y descubre cómo podemos transformar tu presencia online
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 

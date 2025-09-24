@@ -59,10 +59,10 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Geist", "system-ui", "sans-serif"],
-        serif: ["Manrope", "Georgia", "serif"],
-        geist: ["Geist", "system-ui", "sans-serif"],
-        manrope: ["Manrope", "system-ui", "sans-serif"],
+        sans: ["IBM Plex Sans", "system-ui", "sans-serif"],
+        serif: ["Poppins", "Georgia", "serif"],
+        "ibm-plex": ["IBM Plex Sans", "system-ui", "sans-serif"],
+        poppins: ["Poppins", "system-ui", "sans-serif"],
       },
       keyframes: {
         "accordion-down": {
