@@ -38,8 +38,8 @@
     <!-- TODO: Crear imagen 1200x600px y reemplazar PLACEHOLDER_DOMAIN -->
     
     <!-- Additional SEO -->
-    <meta name="theme-color" content="#f97316" />
-    <meta name="msapplication-TileColor" content="#f97316" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="msapplication-TileColor" content="#0F172A" />
     
     <!-- Schema.org será manejado dinámicamente por React -->
     
@@ -48,7 +48,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">  
-</head>
+    <style>
+      /* Evitar flash blanco inicial (FOUC) */
+      html, body { background: #0F172A; color: #ffffff; }
+      #root { background: transparent; }
+    </style>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

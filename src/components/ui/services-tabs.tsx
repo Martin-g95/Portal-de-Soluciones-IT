@@ -7,7 +7,7 @@ const servicesData = [
     id: "preventivo",
     title: "Mantenimiento preventivo",
     icon: Settings,
-    color: "bg-blue-500",
+    color: "bg-blue-600",
     shortTitle: "Preventivo",
     services: [
       "Análisis semanal de espacio",
@@ -41,7 +41,7 @@ const servicesData = [
     id: "correctivo",
     title: "Mantenimiento correctivo",
     icon: Wrench,
-    color: "bg-red-500",
+    color: "bg-indigo-600",
     shortTitle: "Correctivo",
     services: [
       "Resolución de incidencias críticas",
@@ -55,7 +55,7 @@ const servicesData = [
     id: "soporte",
     title: "Soporte especializado SAP, Oracle, Unix, Linux, Windows",
     icon: Server,
-    color: "bg-green-500",
+    color: "bg-cyan-600",
     shortTitle: "Soporte",
     services: [
       "Soporte técnico especializado 24/7",
@@ -69,7 +69,7 @@ const servicesData = [
     id: "auditoria",
     title: "Auditoría, identidad digital y seguridad",
     icon: Shield,
-    color: "bg-purple-500",
+    color: "bg-blue-700",
     shortTitle: "Auditoría",
     services: [
       "Auditorías de seguridad integral",
@@ -83,7 +83,7 @@ const servicesData = [
     id: "migracion",
     title: "Migración a la nube",
     icon: Cloud,
-    color: "bg-cyan-500",
+    color: "bg-cyan-600",
     shortTitle: "Migración",
     services: [
       "Planificación de migración cloud",
@@ -97,7 +97,7 @@ const servicesData = [
     id: "asesoria",
     title: "Asesoría IT especializada",
     icon: Users,
-    color: "bg-orange-500",
+    color: "bg-cyan-400",
     shortTitle: "Asesoría",
     services: [
       "Consultoría estratégica IT",
@@ -111,7 +111,7 @@ const servicesData = [
     id: "implementaciones",
     title: "Nuevas implementaciones BASIS",
     icon: Lock,
-    color: "bg-indigo-500",
+    color: "bg-blue-500",
     shortTitle: "Implementaciones",
     services: [
       "Instalación de sistemas SAP",
@@ -160,24 +160,24 @@ export default function ServicesTabs() {
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-28">
       {/* Título */}
       <div className="cascade-item cascade-delay-1 text-center mb-12">
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-medium mb-6">
-          <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/20 text-cyan-300 rounded-full text-sm font-medium mb-6">
+          <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
           Áreas de Especialización
         </div>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 font-serif">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 font-serif">
           Selecciona tu{" "}
-          <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             área de interés
           </span>
         </h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
           Cada servicio está diseñado para resolver desafíos específicos en tu infraestructura SAP
         </p>
       </div>
 
       {/* Tabs Navigation */}
       <div className="mb-8 w-full" ref={tabsRef}>
-        <div className="hidden md:flex flex-wrap justify-center gap-2 bg-gray-100 rounded-xl">
+        <div className="hidden md:flex flex-wrap justify-center gap-2 bg-slate-900 rounded-xl border border-slate-800">
           {servicesData.map((service: ServiceData, index) => {
             const IconComponent = service.icon
             return (
@@ -187,7 +187,7 @@ export default function ServicesTabs() {
                 className={`cascade-item cascade-delay-${index + 4} flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-medium transition-all duration-200 whitespace-nowrap flex-shrink-0 text-sm min-w-[120px] ${
                   activeTab === service.id
                     ? `${service.color} text-white shadow-lg transform scale-105`
-                    : "text-gray-600 hover:text-gray-900 hover:bg-white"
+                    : "text-slate-300 hover:text-white hover:bg-slate-800"
                 }`}
               >
                 <IconComponent className="w-4 h-4 flex-shrink-0" />
@@ -197,7 +197,7 @@ export default function ServicesTabs() {
           })}
         </div>
 
-        <div className="md:hidden flex overflow-x-auto overflow-y-visible gap-2 bg-gray-100 rounded-xl scrollbar-hide py-2">
+        <div className="md:hidden flex overflow-x-auto overflow-y-visible gap-2 bg-slate-900 rounded-xl scrollbar-hide py-2 border border-slate-800">
           {servicesData.map((service: ServiceData, index) => {
             const IconComponent = service.icon
             return (
@@ -207,7 +207,7 @@ export default function ServicesTabs() {
                 className={`cascade-item cascade-delay-${index + 4} flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-medium transition-all duration-200 whitespace-nowrap flex-shrink-0 text-sm min-w-[120px] ${
                   activeTab === service.id
                     ? `${service.color} text-white shadow-lg transform scale-105`
-                    : "text-gray-600 hover:text-gray-900 hover:bg-white"
+                    : "text-slate-300 hover:text-white hover:bg-slate-800"
                 }`}
               >
                 <IconComponent className="w-4 h-4 flex-shrink-0" />
@@ -220,16 +220,16 @@ export default function ServicesTabs() {
 
       {/* Contenido */}
       {activeService && (
-        <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 mx-auto">
+        <div className="bg-slate-900 rounded-2xl shadow-xl p-6 sm:p-8 border border-slate-800 mx-auto">
           <div className="flex items-start gap-4 mb-6">
             <div className={`${activeService.color} p-3 rounded-xl flex-shrink-0`}>
               <activeService.icon className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
             </div>
             <div className="min-w-0 flex-1">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">
+              <h3 className="text-xl sm:text-2xl font-bold text-white leading-tight">
                 {activeService.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-600">
+              <p className="text-sm sm:text-base text-slate-300">
                 {activeService.services.length} servicios disponibles
               </p>
             </div>
@@ -239,10 +239,10 @@ export default function ServicesTabs() {
             {activeService.services.map((service: string, index: number) => (
               <div
                 key={index}
-                className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors duration-200"
+                className="flex items-start gap-3 p-4 bg-slate-800 rounded-xl hover:bg-slate-700 transition-colors duration-200"
               >
                 <div className={`w-2 h-2 ${activeService.color} rounded-full mt-2 flex-shrink-0`} />
-                <span className="text-sm sm:text-base text-gray-700 leading-relaxed flex-1">
+                <span className="text-sm sm:text-base text-slate-200 leading-relaxed flex-1">
                   {service}
                 </span>
               </div>

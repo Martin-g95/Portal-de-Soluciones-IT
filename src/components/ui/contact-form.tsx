@@ -173,7 +173,7 @@ export default function ContactForm() {
   if (isSubmitted) {
     return (
       <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
-        <CheckCircle className="w-16 h-16 text-orange-600 mx-auto mb-4" />
+        <CheckCircle className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
         <h3 className="text-2xl font-bold text-gray-900 mb-2">¡Mensaje Enviado!</h3>
         <p className="text-gray-600 mb-6">Nos pondremos en contacto contigo pronto.</p>
         
@@ -195,8 +195,8 @@ export default function ContactForm() {
       <div className="space-y-8">
         {/* Title and content above the image */}
         <div>
-          <h3 className="text-3xl font-bold text-gray-900 mb-4 font-serif">Hablemos de tu proyecto</h3>
-          <p className="text-lg text-gray-600 leading-relaxed">
+          <h3 className="text-3xl font-bold text-white mb-4 font-serif">Hablemos de tu proyecto</h3>
+          <p className="text-lg text-slate-300 leading-relaxed">
             Estamos aquí para ayudarte a optimizar tu infraestructura IT. Contacta con nuestros especialistas y descubre
             cómo podemos impulsar el crecimiento de tu empresa.
           </p>
@@ -209,12 +209,12 @@ export default function ContactForm() {
             loading="lazy"
             className="w-[600px] h-[256px] object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-transparent"></div>
         </div>
 
-        <div className="bg-orange-50 p-6 rounded-xl">
-          <h4 className="font-semibold text-orange-900 mb-2">Tiempo de respuesta</h4>
-          <p className="text-orange-700">Respondemos en menos de 24 horas</p>
+        <div className="bg-blue-600/10 p-6 rounded-xl border border-slate-800">
+          <h4 className="font-semibold text-cyan-300 mb-2">Tiempo de respuesta</h4>
+          <p className="text-slate-300">Respondemos en menos de 24 horas</p>
         </div>
       </div>
 
@@ -232,7 +232,7 @@ export default function ContactForm() {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors ${
+              className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
                   errors.name ? 'border-red-500 bg-red-50' : 'border-gray-300'
                 }`}
                 placeholder="Tu nombre"
@@ -250,7 +250,7 @@ export default function ContactForm() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors ${
+              className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
                   errors.email ? 'border-red-500 bg-red-50' : 'border-gray-300'
                 }`}
                 placeholder="tu@email.com"
@@ -270,7 +270,7 @@ export default function ContactForm() {
                 name="company"
                 value={formData.company}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors ${
+              className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
                   errors.company ? 'border-red-500 bg-red-50' : 'border-gray-300'
                 }`}
                 placeholder="Nombre de tu empresa"
@@ -288,7 +288,7 @@ export default function ContactForm() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors ${
+              className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
                   errors.phone ? 'border-red-500 bg-red-50' : 'border-gray-300'
                 }`}
                 placeholder="+54 11 1234-5678"
@@ -306,7 +306,7 @@ export default function ContactForm() {
               name="service"
               value={formData.service}
               onChange={handleChange}
-              className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors ${
+              className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors ${
                 errors.service ? 'border-red-500 bg-red-50' : 'border-gray-300'
               }`}
             >
@@ -332,7 +332,7 @@ export default function ContactForm() {
               rows={4}
               value={formData.message}
               onChange={handleChange}
-              className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors resize-none ${
+              className={`w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none ${
                 errors.message ? 'border-red-500 bg-red-50' : 'border-gray-300'
               }`}
               placeholder="Cuéntanos sobre tu proyecto o necesidades..."
@@ -342,7 +342,7 @@ export default function ContactForm() {
 
           <button
             type="submit"
-            className="w-full bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-colors"
           >
             Enviar Mensaje
             <Send className="w-5 h-5" />

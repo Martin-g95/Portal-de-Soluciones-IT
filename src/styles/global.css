@@ -5,8 +5,40 @@
 
 /* Configuración de fuentes */
 @layer base {
+  :root {
+    /* Paleta Ciber Azul & Verde Neón (HSL) */
+    --background: 222 47% 11%;        /* #0F172A - azul marino oscuro */
+    --foreground: 0 0% 100%;          /* #FFFFFF */
+
+    --primary: 221 83% 53%;           /* #2563EB - azul brillante */
+    --primary-foreground: 0 0% 100%;  /* #FFFFFF */
+
+    --secondary: 189 94% 56%;         /* ~#22D3EE - cian/verde neón */
+    --secondary-foreground: 222 47% 11%;
+
+    --accent: 189 94% 56%;
+    --accent-foreground: 222 47% 11%;
+
+    --muted: 215 20% 17%;             /* slate-800 aprox */
+    --muted-foreground: 215 16% 47%;   /* slate-400 aprox */
+
+    --card: 222 47% 11%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 100%;
+
+    --border: 215 20% 25%;
+    --input: 215 20% 25%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.75rem;
+  }
+
   html {
     font-family: 'Geist', system-ui, sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
   
   /* Aplicar Geist como fuente principal */
@@ -15,6 +47,8 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
   
   /* Clases para usar fuentes específicas */

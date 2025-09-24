@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white border-b border-gray-200 fixed w-full top-0 z-50 shadow-sm">
+    <nav className="backdrop-blur bg-slate-900/80 border-b border-slate-800 fixed w-full top-0 z-50 shadow">
       {/* Contenedor principal ajustado */}
       <div className="w-full px-6 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center h-20 relative">
@@ -91,8 +91,8 @@ const Navbar: React.FC = () => {
                   to={item.href}
                   className={`px-3 py-2 text-sm font-medium transition-colors duration-200 whitespace-nowrap ${
                     isActive 
-                      ? 'text-orange-500 font-semibold'
-                      : 'text-gray-600 hover:text-orange-500'
+                      ? 'text-cyan-400 font-semibold'
+                      : 'text-gray-300 hover:text-cyan-400'
                   }`}
                 >
                   {item.label}
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-6 z-10">
             <button
               onClick={handleContactClick}
-              className="px-4 py-2 rounded-xl text-sm font-medium bg-orange-500 text-white hover:bg-orange-600 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap"
+              className="px-4 py-2 rounded-xl text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap"
             >
               Contacto
             </button>
@@ -113,7 +113,7 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-gray-600 hover:text-orange-500 transition-colors z-10"
+            className="md:hidden p-2 text-gray-300 hover:text-cyan-400 transition-colors z-10"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-expanded={isMenuOpen}
             aria-label="Abrir menú principal"
@@ -132,7 +132,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-gray-200 bg-white">
+          <div className="md:hidden border-t border-slate-800 bg-slate-900">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {/* Items normales en mobile */}
               {NAV_ITEMS.map((item) => {
@@ -143,8 +143,8 @@ const Navbar: React.FC = () => {
                     to={item.href}
                     className={`block px-3 py-2 text-base font-medium transition-colors ${
                       isActive 
-                        ? 'text-orange-500 font-semibold' 
-                        : 'text-gray-600 hover:text-orange-500'
+                        ? 'text-cyan-400 font-semibold' 
+                        : 'text-gray-300 hover:text-cyan-400'
                     }`}
                     onClick={closeMobileMenu}
                   >
@@ -156,7 +156,7 @@ const Navbar: React.FC = () => {
               {/* Contacto como botón en mobile */}
               <button
                 onClick={handleContactClick}
-                className="block w-full text-left px-3 py-2 rounded-xl text-base font-medium bg-orange-500 text-white hover:bg-orange-600"
+                className="block w-full text-left px-3 py-2 rounded-xl text-base font-medium bg-blue-600 text-white hover:bg-blue-700"
               >
                 Contacto
               </button>

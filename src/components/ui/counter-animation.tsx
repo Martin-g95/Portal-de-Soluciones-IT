@@ -54,7 +54,7 @@ export default function CounterAnimation({ end, duration = 2000, suffix = "", pr
   }, [isVisible, end, duration])
 
   return (
-    <div ref={counterRef} className="text-3xl font-bold text-orange-600 mb-2">
+    <div ref={counterRef} className="text-3xl font-bold text-cyan-300 mb-2">
       {prefix}
       {count}
       {suffix}

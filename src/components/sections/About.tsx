@@ -9,21 +9,21 @@ const About = () => {
       <SEOHead {...seoData.about} />
       <div className="overflow-hidden">
       {/* Hero reutilizado del inicio */}
-      <section className="relative bg-gradient-to-br from-orange-50 to-red-50 pt-24 pb-12 md:py-16">
+      <section className="relative bg-gradient-to-br from-slate-900 to-slate-800 pt-24 pb-12 md:py-16">
         <div className="mx-auto px-4 max-w-7xl">
               <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
                 <div className="space-y-4 md:space-y-6">
                   <div className="cascade-item cascade-delay-1 space-y-3 md:translate-y-14">
                     {/* Título simple */}
-                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight font-serif break-words">
+                    <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight font-serif break-words">
                       <span className="block">Transformamos</span>
-                      <span className="text-orange-600 block">tu visión</span>
+                      <span className="text-cyan-300 block">tu visión</span>
                     </h1>
                     {/* Párrafos simples */}
-                    <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                    <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
                       Con décadas de experiencia combinada, construimos el futuro tecnológico de tu empresa. Conoce al equipo que convierte desafíos complejos en soluciones innovadoras
                     </p>
-                    <p className="text-sm sm:text-base text-gray-500">
+                    <p className="text-sm sm:text-base text-slate-400">
                       Cada proyecto es una oportunidad de demostrar nuestra pasión por la excelencia tecnológica y el crecimiento empresarial
                     </p>
                   </div>
@@ -44,21 +44,21 @@ const About = () => {
       </section>
       
       {/* Experience Section */}
-      <section id="sobre-nosotros" className="py-10 bg-gray-50">
+      <section id="sobre-nosotros" className="py-10 bg-slate-950">
         <div className="mx-auto px-4 max-w-7xl">
           {/* Mission, Vision, Values Cards */}
           <div className="py-6 md:py-10 mb-8">
             <div className="mx-auto px-4 md:px-6 max-w-7xl">
               {/* Header */}
               <div className="cascade-item cascade-delay-1 text-center mb-10 md:mb-16">
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-600 rounded-full text-sm font-medium mb-6">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/20 text-cyan-300 rounded-full text-sm font-medium mb-6">
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
                   Nuestros Valores
                 </div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 font-serif">
-                  Lo que nos <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">define</span>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 font-serif">
+                  Lo que nos <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">define</span>
                 </h2>
-                <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-base md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
                   Los pilares fundamentales que guían cada uno de nuestros proyectos y relaciones con clientes
                 </p>
               </div>
@@ -66,14 +66,14 @@ const About = () => {
               {/* Cards Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 {/* Misión */}
-                <div className="cascade-item cascade-delay-1 group relative p-6 md:p-8 rounded-2xl md:rounded-3xl bg-white/90 border border-gray-200/50 hover:border-blue-300/50 transition-all duration-300 hover:shadow-lg md:hover:shadow-xl md:hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-5 rounded-2xl md:rounded-3xl transition-opacity duration-300"></div>
+                <div className="cascade-item cascade-delay-1 group relative p-6 md:p-8 rounded-2xl md:rounded-3xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:shadow-lg md:hover:shadow-xl md:hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500 opacity-10 group-hover:opacity-20 rounded-2xl md:rounded-3xl transition-opacity duration-300"></div>
                   <div className="relative z-10 text-center">
                     <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 mx-auto">
                       <Compass className="w-6 h-6 md:w-8 md:h-8 text-white" />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">Misión</h3>
-                    <p className="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Misión</h3>
+                    <p className="text-sm md:text-base text-slate-300 leading-relaxed group-hover:text-slate-200">
                       Proveer soluciones tecnológicas innovadoras que impulsen la transformación digital de nuestros clientes, 
                       brindando servicios de calidad con un enfoque personalizado y compromiso constante.
                     </p>
@@ -81,14 +81,14 @@ const About = () => {
                 </div>
 
                 {/* Visión - CORREGIDO el error de sintaxis */}
-                <div className="cascade-item cascade-delay-2 group relative p-6 md:p-8 rounded-2xl md:rounded-3xl bg-white/90 border border-gray-200/50 hover:border-purple-300/50 transition-all duration-300 hover:shadow-lg md:hover:shadow-xl md:hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-violet-500 opacity-0 group-hover:opacity-5 rounded-2xl md:rounded-3xl transition-opacity duration-300"></div>
+                <div className="cascade-item cascade-delay-2 group relative p-6 md:p-8 rounded-2xl md:rounded-3xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:shadow-lg md:hover:shadow-xl md:hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-700 to-indigo-600 opacity-10 group-hover:opacity-20 rounded-2xl md:rounded-3xl transition-opacity duration-300"></div>
                   <div className="relative z-10 text-center">
-                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-purple-500 to-violet-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 mx-auto">
+                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-700 to-indigo-600 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 mx-auto">
                       <Telescope className="w-6 h-6 md:w-8 md:h-8 text-white" />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">Visión</h3>
-                    <p className="text-sm md:text-base text-gray-600 leading-relaxed group-hover:text-gray-700">
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Visión</h3>
+                    <p className="text-sm md:text-base text-slate-300 leading-relaxed group-hover:text-slate-200">
                       Ser reconocidos como líderes en consultoría tecnológica, siendo referentes en innovación, 
                       excelencia en servicio y creadores de soluciones que transformen el panorama digital de América Latina.
                     </p>
@@ -96,33 +96,33 @@ const About = () => {
                 </div>
 
                 {/* Valores */}
-                <div className="cascade-item cascade-delay-3 group relative p-6 md:p-8 rounded-2xl md:rounded-3xl bg-white/90 border border-gray-200/50 hover:border-orange-300/50 transition-all duration-300 hover:shadow-lg md:hover:shadow-xl md:hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500 opacity-0 group-hover:opacity-5 rounded-2xl md:rounded-3xl transition-opacity duration-300"></div>
+                <div className="cascade-item cascade-delay-3 group relative p-6 md:p-8 rounded-2xl md:rounded-3xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:shadow-lg md:hover:shadow-xl md:hover:-translate-y-1">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-500 opacity-10 group-hover:opacity-20 rounded-2xl md:rounded-3xl transition-opacity duration-300"></div>
                   <div className="relative z-10 text-center">
-                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 mx-auto">
+                    <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl md:rounded-2xl flex items-center justify-center mb-4 md:mb-6 mx-auto">
                       <Heart className="w-6 h-6 md:w-8 md:h-8 text-white" />
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">Valores</h3>
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Valores</h3>
                     <div className="space-y-2 md:space-y-3 text-left">
                       <div className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-gray-600">Innovación constante</span>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                        <span className="text-sm md:text-base text-slate-300">Innovación constante</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-gray-600">Compromiso con resultados</span>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                        <span className="text-sm md:text-base text-slate-300">Compromiso con resultados</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-gray-600">Transparencia y honestidad</span>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                        <span className="text-sm md:text-base text-slate-300">Transparencia y honestidad</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-gray-600">Trabajo en equipo</span>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                        <span className="text-sm md:text-base text-slate-300">Trabajo en equipo</span>
                       </div>
                       <div className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3 flex-shrink-0"></div>
-                        <span className="text-sm md:text-base text-gray-600">Excelencia en servicio</span>
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full mr-3 flex-shrink-0"></div>
+                        <span className="text-sm md:text-base text-slate-300">Excelencia en servicio</span>
                       </div>
                     </div>
                   </div>
@@ -134,17 +134,17 @@ const About = () => {
 {/* Team Section - Rostros completos visibles */}
           <div className="mb-16">
             <div className="cascade-item cascade-delay-1 max-w-4xl mx-auto text-center mb-10">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-sm font-semibold">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/20 text-cyan-300 text-sm font-semibold">
                 Nuestro equipo
               </span>
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mt-4 font-serif">
-                Las personas detrás de <span className="text-orange-600">Baseit</span>
+              <h3 className="text-3xl md:text-4xl font-bold text-white mt-4 font-serif">
+                Las personas detrás de <span className="text-cyan-300">Baseit</span>
               </h3>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto mt-3">
                 Contamos con miembros de distinto nivel de experiencia que se asignan, dependiendo la complejidad y
                 urgencia de cada tarea.
               </p>
-              <div className="h-1 w-16 bg-orange-500 rounded-full mx-auto mt-5"></div>
+              <div className="h-1 w-16 bg-cyan-400 rounded-full mx-auto mt-5"></div>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -174,7 +174,7 @@ const About = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
       </div>
       <h4 className="font-semibold text-gray-900 text-lg">{member.name}</h4>
-      <p className="text-orange-600 font-medium">{member.role}</p>
+      <p className="text-cyan-300 font-medium">{member.role}</p>
       </div>
     ))}
             </div>
