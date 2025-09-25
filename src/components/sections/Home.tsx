@@ -150,9 +150,9 @@ const Home = () => {
                   {/* Indicador de hover con link */}
                   <Link 
                     to={`/servicios?service=${service.serviceId}`}
-                    className="mt-auto pt-6 inline-flex items-center text-sm font-medium text-slate-400 group-hover:text-cyan-300 transition-colors hover:text-cyan-200"
+                    className="mt-auto pt-6 inline-flex items-center text-sm font-medium text-slate-400 group-hover:text-cyan-300 transition-all duration-300 hover:text-cyan-200 hover:scale-105"
                   >
-                    <span>Descubre {service.title.toLowerCase()}</span>
+                    <span className="group-hover:font-semibold transition-all duration-300">más información</span>
                     <ArrowRight className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
