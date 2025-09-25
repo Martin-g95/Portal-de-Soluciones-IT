@@ -170,18 +170,8 @@ export function useContactForm() {
       message: sanitizeInput(formData.message),
     }
 
-    // TEMPORAL: Simulación para demo (sin backend)
-    console.log('📧 Datos del formulario (DEMO):', sanitizedFormData)
-    
-    // Simular envío exitoso
-    setIsSubmitted(true)
-    setFormData({ name: '', email: '', company: '', phone: '', service: '', message: '' })
-    setTimeout(() => setIsSubmitted(false), 5000)
-    
-    // Código original comentado para cuando tengas backend desplegado
-    /*
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001'
+      const apiUrl = import.meta.env.VITE_API_URL || 'https://infracore-backend.onrender.com'
       const response = await fetch(`${apiUrl}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -210,7 +200,6 @@ export function useContactForm() {
       console.error('Error al enviar formulario:', error)
       alert('Error al enviar el formulario. Por favor, intenta de nuevo.')
     }
-    */
   }
 
   return {
