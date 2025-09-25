@@ -26,51 +26,51 @@ import { useContactForm } from "../../hooks/useContactForm"
 //     // NO hacer trim aquí para preservar espacios mientras escribe
 // }
 
-const detectSQLInjection = (input: string): boolean => {
-  // Patrones comunes de inyección SQL
-  const sqlPatterns = [
-    /(\b(SELECT|INSERT|UPDATE|DELETE|DROP|CREATE|ALTER|EXEC|UNION|SCRIPT)\b)/i,
-    /(--|#|\/\*|\*\/)/,
-    /(\bOR\b.*=.*\bOR\b|\bAND\b.*=.*\bAND\b)/i,
-    /(\bunion\b.*\bselect\b)/i,
-    /(\bdrop\b.*\btable\b)/i,
-    /(\binsert\b.*\binto\b)/i,
-    /(\bupdate\b.*\bset\b)/i,
-    /(\bdelete\b.*\bfrom\b)/i,
-    /(xp_cmdshell|sp_executesql)/i,
-    /('(\s*)(or|and)(\s*)('|1=1|0=0))/i,
-    /((\%27)|(\'))\s*((\%6f)|o|(\%4f))((\%72)|r|(\%52))/i, // ' or
-    /((\%27)|(\'))\s*((\%61)|a|(\%41))((\%6e)|n|(\%4e))((\%64)|d|(\%44))/i, // ' and
-  ]
+// const detectSQLInjection = (input: string): boolean => {
+//   // Patrones comunes de inyección SQL
+//   const sqlPatterns = [
+//     /(\b(SELECT|INSERT|UPDATE|DELETE|DROP|CREATE|ALTER|EXEC|UNION|SCRIPT)\b)/i,
+//     /(--|#|\/\*|\*\/)/,
+//     /(\bOR\b.*=.*\bOR\b|\bAND\b.*=.*\bAND\b)/i,
+//     /(\bunion\b.*\bselect\b)/i,
+//     /(\bdrop\b.*\btable\b)/i,
+//     /(\binsert\b.*\binto\b)/i,
+//     /(\bupdate\b.*\bset\b)/i,
+//     /(\bdelete\b.*\bfrom\b)/i,
+//     /(xp_cmdshell|sp_executesql)/i,
+//     /('(\s*)(or|and)(\s*)('|1=1|0=0))/i,
+//     /((\%27)|(\'))\s*((\%6f)|o|(\%4f))((\%72)|r|(\%52))/i, // ' or
+//     /((\%27)|(\'))\s*((\%61)|a|(\%41))((\%6e)|n|(\%4e))((\%64)|d|(\%44))/i, // ' and
+//   ]
   
-  return sqlPatterns.some(pattern => pattern.test(input))
-}
+//   return sqlPatterns.some(pattern => pattern.test(input))
+// }
 
-const detectXSSAttempt = (input: string): boolean => {
+// const detectXSSAttempt = (input: string): boolean => {
   // Patrones comunes de XSS
-  const xssPatterns = [
-    /<script[\s\S]*?>[\s\S]*?<\/script>/gi,
-    /<iframe[\s\S]*?>[\s\S]*?<\/iframe>/gi,
-    /<object[\s\S]*?>[\s\S]*?<\/object>/gi,
-    /<embed[\s\S]*?>/gi,
-    /<link[\s\S]*?>/gi,
-    /javascript:/gi,
-    /vbscript:/gi,
-    /on\w+\s*=/gi,
-    /expression\s*\(/gi,
-    /url\s*\(/gi,
-    /@import/gi,
-    /&#x/gi,
-    /document\.cookie/gi,
-    /document\.write/gi,
-    /eval\s*\(/gi,
-    /alert\s*\(/gi,
-    /confirm\s*\(/gi,
-    /prompt\s*\(/gi,
-  ]
+  // const xssPatterns = [
+  //   /<script[\s\S]*?>[\s\S]*?<\/script>/gi,
+  //   /<iframe[\s\S]*?>[\s\S]*?<\/iframe>/gi,
+  //   /<object[\s\S]*?>[\s\S]*?<\/object>/gi,
+  //   /<embed[\s\S]*?>/gi,
+  //   /<link[\s\S]*?>/gi,
+  //   /javascript:/gi,
+  //   /vbscript:/gi,
+  //   /on\w+\s*=/gi,
+  //   /expression\s*\(/gi,
+  //   /url\s*\(/gi,
+  //   /@import/gi,
+  //   /&#x/gi,
+  //   /document\.cookie/gi,
+  //   /document\.write/gi,
+  //   /eval\s*\(/gi,
+  //   /alert\s*\(/gi,
+  //   /confirm\s*\(/gi,
+  //   /prompt\s*\(/gi,
+  // ]
   
-  return xssPatterns.some(pattern => pattern.test(input))
-}
+//   return xssPatterns.some(pattern => pattern.test(input))
+// }
 
 // Componente para mostrar errores
 const ErrorMessage = ({ error }: { error?: string }) => {
