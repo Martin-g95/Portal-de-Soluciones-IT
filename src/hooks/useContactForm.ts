@@ -170,6 +170,16 @@ export function useContactForm() {
       message: sanitizeInput(formData.message),
     }
 
+    // TEMPORAL: Simulación para demo (sin backend)
+    console.log('📧 Datos del formulario (DEMO):', sanitizedFormData)
+    
+    // Simular envío exitoso
+    setIsSubmitted(true)
+    setFormData({ name: '', email: '', company: '', phone: '', service: '', message: '' })
+    setTimeout(() => setIsSubmitted(false), 5000)
+    
+    // Código original comentado para cuando tengas backend desplegado
+    /*
     try {
       const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3001'
       const response = await fetch(`${apiUrl}/api/contact`, {
@@ -190,19 +200,17 @@ export function useContactForm() {
             .map((er: { field?: string; message?: string }) => `${er.field ?? 'campo'}: ${er.message ?? ''}`)
             .join('\n')
           errorMessage = `Revisa los campos:\n${details}`
-          // eslint-disable-next-line no-console
           console.error('Errores de validación:', result.errors)
         } else {
-          // eslint-disable-next-line no-console
           console.error('Error del servidor:', { status, result })
         }
         alert(errorMessage)
       }
     } catch (error) {
-      // eslint-disable-next-line no-console
       console.error('Error al enviar formulario:', error)
       alert('Error al enviar el formulario. Por favor, intenta de nuevo.')
     }
+    */
   }
 
   return {
