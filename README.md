@@ -230,25 +230,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ---
 
-## 👨‍💻 Autor
-
-**InfraCore Team**
-- 📧 Email: contacto@infracore.com.ar
-- 💼 LinkedIn: [InfraCore](https://www.linkedin.com)
-- 🐙 GitHub: [@tu-usuario](https://github.com/tu-usuario)
-
----
-
-## 🙏 Agradecimientos
-
-- [React](https://reactjs.org/) - Biblioteca de UI
-- [Tailwind CSS](https://tailwindcss.com/) - Framework de CSS
-- [Vercel](https://vercel.com/) - Hosting del frontend
-- [Render](https://render.com/) - Hosting del backend
-- [Brevo](https://www.brevo.com/) - Servicio de emails
-
----
-
 <div align="center">
 
 **⭐ Si te gusta este proyecto, ¡dale una estrella! ⭐**
