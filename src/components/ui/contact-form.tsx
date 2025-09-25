@@ -1,32 +1,30 @@
-import type React from "react"
-
 import { Send, CheckCircle, AlertCircle } from "lucide-react"
 import { useContactForm } from "../../hooks/useContactForm"
 
-// Tipos para validación
-interface ValidationErrors {
-  name?: string;
-  email?: string;
-  company?: string;
-  phone?: string;
-  service?: string;
-  message?: string;
-}
+// Tipos para validación (mantenido para futuras mejoras)
+// interface ValidationErrors {
+//   name?: string;
+//   email?: string;
+//   company?: string;
+//   phone?: string;
+//   service?: string;
+//   message?: string;
+// }
 
-// Funciones de sanitización y seguridad
-const sanitizeInput = (input: string): string => {
-  // Remover tags HTML y caracteres peligrosos pero preservar espacios
-  return input
-    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '') // Remover tags script
-    .replace(/<[^>]*>/g, '') // Remover todos los tags HTML
-    .replace(/javascript:/gi, '') // Remover javascript:
-    .replace(/on\w+\s*=/gi, '') // Remover event handlers (onclick, onload, etc.)
-    .replace(/&lt;script&gt;/gi, '') // Remover scripts codificados
-    .replace(/&lt;\/script&gt;/gi, '')
-    .replace(/&#x3C;script&#x3E;/gi, '')
-    .replace(/\0/g, '') // Remover null bytes
-    // NO hacer trim aquí para preservar espacios mientras escribe
-}
+// Funciones de sanitización y seguridad (mantenido para futuras mejoras)
+// const sanitizeInput = (input: string): string => {
+//   // Remover tags HTML y caracteres peligrosos pero preservar espacios
+//   return input
+//     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '') // Remover tags script
+//     .replace(/<[^>]*>/g, '') // Remover todos los tags HTML
+//     .replace(/javascript:/gi, '') // Remover javascript:
+//     .replace(/on\w+\s*=/gi, '') // Remover event handlers (onclick, onload, etc.)
+//     .replace(/&lt;script&gt;/gi, '') // Remover scripts codificados
+//     .replace(/&lt;\/script&gt;/gi, '')
+//     .replace(/&#x3C;script&#x3E;/gi, '')
+//     .replace(/\0/g, '') // Remover null bytes
+//     // NO hacer trim aquí para preservar espacios mientras escribe
+// }
 
 const detectSQLInjection = (input: string): boolean => {
   // Patrones comunes de inyección SQL
@@ -89,10 +87,8 @@ const ErrorMessage = ({ error }: { error?: string }) => {
 export default function ContactForm() {
   const {
     formData,
-    setFormData,
     errors,
     isSubmitted,
-    setIsSubmitted,
     handleChange,
     handleSubmit,
   } = useContactForm()
