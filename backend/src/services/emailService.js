@@ -45,7 +45,7 @@ const createContactEmailTemplate = (contactData) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Nuevo Mensaje de Contacto - BaseIT</title>
+      <title>Nuevo Mensaje de Contacto - InfraCore</title>
       <style>
         body {
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -131,11 +131,11 @@ const createContactEmailTemplate = (contactData) => {
     <body>
       <div class="header">
         <h1>🚀 Nuevo Mensaje de Contacto</h1>
-        <p>BaseIT - Consultoría IT Especializada</p>
+        <p>InfraCore - Infraestructura Digital Especializada</p>
       </div>
       
       <div class="content">
-        <p>Has recibido un nuevo mensaje de contacto desde el sitio web de BaseIT.</p>
+        <p>Has recibido un nuevo mensaje de contacto desde el sitio web de InfraCore.</p>
         
         <div class="info-grid">
           <div class="info-item">
@@ -184,9 +184,9 @@ const createContactEmailTemplate = (contactData) => {
       </div>
       
       <div class="footer">
-        <p>Este mensaje fue enviado automáticamente desde el formulario de contacto de BaseIT</p>
-        <p><span class="highlight">BaseIT</span> - Tu socio tecnológico de confianza</p>
-        <p>📧 ${process.env.EMAIL_FROM} | 🌐 www.baseit.com</p>
+        <p>Este mensaje fue enviado automáticamente desde el formulario de contacto de InfraCore</p>
+        <p><span class="highlight">InfraCore</span> - Tu socio en infraestructura digital</p>
+        <p>📧 ${process.env.EMAIL_FROM} | 🌐 www.infracore.com.ar</p>
       </div>
     </body>
     </html>
@@ -201,7 +201,7 @@ const createClientConfirmationTemplate = (contactData) => {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Confirmación de Mensaje - BaseIT</title>
+      <title>Confirmación de Mensaje - InfraCore</title>
       <style>
         body {
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -262,7 +262,7 @@ const createClientConfirmationTemplate = (contactData) => {
     <body>
       <div class="header">
         <h1>✅ Mensaje Recibido</h1>
-        <p>BaseIT - Consultoría IT Especializada</p>
+        <p>InfraCore - Infraestructura Digital Especializada</p>
       </div>
       
       <div class="content">
@@ -270,7 +270,7 @@ const createClientConfirmationTemplate = (contactData) => {
         
         <h2>¡Hola ${contactData.name}!</h2>
         
-        <p>Hemos recibido tu mensaje correctamente. Gracias por contactar con <span class="highlight">BaseIT</span>.</p>
+        <p>Hemos recibido tu mensaje correctamente. Gracias por contactar con <span class="highlight">InfraCore</span>.</p>
         
         <p><strong>Resumen de tu consulta:</strong></p>
         <ul>
@@ -297,8 +297,8 @@ const createClientConfirmationTemplate = (contactData) => {
       </div>
       
       <div class="footer">
-        <p><span class="highlight">BaseIT</span> - Tu socio tecnológico de confianza</p>
-        <p>🚀 Maximizando el valor de tu inversión en software</p>
+        <p><span class="highlight">InfraCore</span> - Tu socio en infraestructura digital</p>
+        <p>🚀 Construyendo la base tecnológica que impulsa tu presencia online</p>
       </div>
     </body>
     </html>
@@ -310,7 +310,7 @@ export const sendContactEmail = async (contactData) => {
   try {
     const { provider, client } = await initializeEmailService();
     
-    const fromEmail = process.env.EMAIL_FROM || 'BaseIT <noreply@tudominio.com>';
+    const fromEmail = process.env.EMAIL_FROM || 'InfraCore <noreply@tudominio.com>';
     const toEmail = process.env.EMAIL_TO || 'test@example.com';
 
     if (provider === 'brevo') {
@@ -326,7 +326,7 @@ export const sendContactEmail = async (contactData) => {
       const teamEmail = new SendSmtpEmail();
       teamEmail.sender = { 
         email: extractEmail(fromEmail), 
-        name: 'BaseIT' 
+        name: 'InfraCore' 
       };
       teamEmail.to = [{ email: toEmail }];
       teamEmail.subject = `🚀 Nuevo Contacto: ${contactData.name} - ${contactData.service || 'Consulta General'}`;
@@ -336,10 +336,10 @@ export const sendContactEmail = async (contactData) => {
       const clientEmail = new SendSmtpEmail();
       clientEmail.sender = { 
         email: extractEmail(fromEmail), 
-        name: 'BaseIT' 
+        name: 'InfraCore' 
       };
       clientEmail.to = [{ email: contactData.email }];
-      clientEmail.subject = '✅ Confirmación de Mensaje - BaseIT';
+      clientEmail.subject = '✅ Confirmación de Mensaje - InfraCore';
       clientEmail.htmlContent = createClientConfirmationTemplate(contactData);
 
       const [teamResult, clientResult] = await Promise.all([
@@ -377,7 +377,7 @@ export const sendContactEmail = async (contactData) => {
       const clientEmail = {
         from: fromEmail,
         to: contactData.email,
-        subject: '✅ Confirmación de Mensaje - BaseIT',
+        subject: '✅ Confirmación de Mensaje - InfraCore',
         html: createClientConfirmationTemplate(contactData)
       };
 

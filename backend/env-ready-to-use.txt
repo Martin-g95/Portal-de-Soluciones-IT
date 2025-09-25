@@ -10,8 +10,8 @@ CORS_ORIGIN=http://localhost:5173
 # Crea cuenta en: https://www.brevo.com
 # Ve a Settings > SMTP & API > Create API Key
 BREVO_API_KEY=
-EMAIL_FROM=BaseIT <noreply@tudominio.com>
-EMAIL_TO=contacto@tuempresa.com
+EMAIL_FROM=InfraCore <noreply@tudominio.com>
+EMAIL_TO=contacto@infracore.com.ar
 
 # Si no configuras Brevo, se usará Ethereal para pruebas (no emails reales)
 

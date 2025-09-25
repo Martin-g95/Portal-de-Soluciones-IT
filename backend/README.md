@@ -1,6 +1,6 @@
-# 🚀 Backend BaseIT - API de Contacto
+# 🚀 Backend InfraCore - API de Contacto
 
-Backend completo para el formulario de contacto de BaseIT, construido con Node.js, Express y Nodemailer.
+Backend completo para el formulario de contacto de InfraCore, construido con Node.js, Express y Nodemailer.
 
 ## ✨ Características
 
@@ -72,8 +72,8 @@ EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USER=tu-email@gmail.com
 EMAIL_PASS=tu-app-password
-EMAIL_FROM=BaseIT <tu-email@gmail.com>
-EMAIL_TO=contacto@baseit.com
+EMAIL_FROM=InfraCore <tu-email@gmail.com>
+EMAIL_TO=contacto@infracore.com.ar
 
 # Seguridad
 JWT_SECRET=tu-jwt-secret-super-seguro
@@ -166,7 +166,7 @@ Health check del servidor.
 
 ### Características
 - **HTML responsive** con CSS inline
-- **Branding** de BaseIT
+- **Branding** de InfraCore
 - **Información estructurada** del contacto
 - **Call-to-action** buttons
 - **Diseño profesional** y moderno
@@ -257,7 +257,7 @@ CMD ["npm", "start"]
 NODE_ENV=production
 PORT=3001
 EMAIL_HOST=smtp.gmail.com
-EMAIL_USER=produccion@baseit.com
+EMAIL_USER=produccion@infracore.com.ar
 EMAIL_PASS=app-password-produccion
 ```
 
@@ -315,5 +315,5 @@ MIT License - ver [LICENSE](LICENSE) para detalles.
 
 ---
 
-**BaseIT** - Tu socio tecnológico de confianza 🚀
+**InfraCore** - Tu socio en infraestructura digital 🚀
 

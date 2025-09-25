@@ -1,7 +1,7 @@
 {
-  "name": "baseit-backend",
+  "name": "infracore-backend",
   "version": "1.0.0",
-  "description": "Backend API para BaseIT landing page",
+  "description": "Backend API para InfraCore landing page",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
@@ -12,12 +12,13 @@
     "post:contact": "node scripts/post-contact.mjs"
   },
   "keywords": [
-    "baseit",
+    "infracore",
+    "infraestructura",
     "api",
     "contact",
     "nodejs"
   ],
-  "author": "BaseIT Team",
+  "author": "InfraCore Team",
   "license": "MIT",
   "dependencies": {
     "@getbrevo/brevo": "^3.0.1",

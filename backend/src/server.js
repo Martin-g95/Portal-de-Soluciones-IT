@@ -81,7 +81,7 @@ app.use(errorHandler);
 
 // Iniciar servidor
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor BaseIT ejecutándose en puerto ${PORT}`);
+  console.log(`🚀 Servidor InfraCore ejecutándose en puerto ${PORT}`);
   console.log(`📧 API de contacto disponible en: http://localhost:${PORT}/api/contact`);
   console.log(`🏥 Health check en: http://localhost:${PORT}/health`);
   console.log(`🌍 Entorno: ${process.env.NODE_ENV}`);

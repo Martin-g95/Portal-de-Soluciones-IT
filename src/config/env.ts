@@ -1,4 +1,4 @@
-// Configuración de variables de entorno para BaseIT
+// Configuración de variables de entorno para InfraCore
 // Centraliza todas las variables de entorno en un solo lugar
 
 export const env = {

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Instalando Backend BaseIT..."
+echo "🚀 Instalando Backend InfraCore..."
 echo
 
 # Verificar si Node.js está instalado

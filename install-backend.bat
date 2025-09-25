@@ -1,5 +1,5 @@
 @echo off
-echo 🚀 Instalando Backend BaseIT...
+echo 🚀 Instalando Backend InfraCore...
 echo.
 
 REM Verificar si Node.js está instalado
