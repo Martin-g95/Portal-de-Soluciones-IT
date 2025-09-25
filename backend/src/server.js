@@ -61,6 +61,20 @@ if (process.env.NODE_ENV !== 'test') {
   app.use(morgan('combined'));
 }
 
+// Ruta raíz
+app.get('/', (req, res) => {
+  res.status(200).json({
+    message: 'InfraCore Backend API',
+    version: '1.0.0',
+    status: 'OK',
+    timestamp: new Date().toISOString(),
+    endpoints: {
+      health: '/health',
+      contact: '/api/contact'
+    }
+  });
+});
+
 // Health check
 app.get('/health', (req, res) => {
   res.status(200).json({
