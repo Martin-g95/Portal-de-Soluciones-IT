@@ -18,11 +18,11 @@
 
 ---
 
-## 📋 Descripción
+## 🎯 ¿Qué es InfraCore?
 
-**InfraCore** es una landing page moderna y completamente funcional para una empresa de infraestructura digital. El proyecto incluye un frontend React con TypeScript, un backend Node.js robusto, y está desplegado en la nube con funcionalidades completas de SEO, formularios de contacto y envío de emails.
+**InfraCore** es una landing page moderna y completamente funcional para una empresa de infraestructura digital. Una solución completa que combina un frontend React con TypeScript, un backend Node.js robusto, y está desplegado en la nube con funcionalidades completas de SEO, formularios de contacto y envío de emails.
 
-### ✨ Características Principales
+### ✨ Características Destacadas
 
 - 🎨 **Diseño Moderno**: Interfaz limpia y profesional con animaciones suaves
 - 📱 **Totalmente Responsivo**: Optimizado para todos los dispositivos
@@ -56,97 +56,37 @@ infraCore-landing/
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Stack Tecnológico
 
-### Frontend
-- **React 19.1.1** - Biblioteca de UI
-- **TypeScript 5.8.3** - Tipado estático
-- **Vite 7.1.2** - Build tool y dev server
-- **Tailwind CSS 3.4.0** - Framework de CSS
-- **React Router DOM 7.8.2** - Enrutamiento
-- **Lucide React 0.541.0** - Iconos
-- **Animate.css 4.1.1** - Animaciones
+### 🎨 Frontend
+- **React 19.1.1** - Biblioteca de UI moderna
+- **TypeScript 5.8.3** - Tipado estático para mayor robustez
+- **Vite 7.1.2** - Build tool ultra-rápido
+- **Tailwind CSS 3.4.0** - Framework de CSS utility-first
+- **React Router DOM 7.8.2** - Enrutamiento SPA
+- **Lucide React 0.541.0** - Iconos modernos
+- **Animate.css 4.1.1** - Animaciones fluidas
 
-### Backend
+### ⚙️ Backend
 - **Node.js 18+** - Runtime de JavaScript
-- **Express 4.18.2** - Framework web
-- **Nodemailer 6.9.7** - Envío de emails
-- **Brevo API 3.0.1** - Servicio de emails
+- **Express 4.18.2** - Framework web minimalista
+- **Nodemailer 6.9.7** - Envío de emails robusto
+- **Brevo API 3.0.1** - Servicio de emails profesional
 - **CORS 2.8.5** - Política de origen cruzado
 - **Helmet 7.1.0** - Seguridad HTTP
 - **Express Rate Limit 7.1.5** - Limitación de requests
 
-### Herramientas de Desarrollo
+### 🔧 Herramientas de Desarrollo
 - **ESLint 9.33.0** - Linter de código
 - **PostCSS 8.5.6** - Procesador de CSS
 - **Autoprefixer 10.4.21** - Prefijos CSS automáticos
 - **Jest 29.7.0** - Testing framework
 
-### Despliegue y DevOps
-- **Vercel** - Hosting del frontend
-- **Render** - Hosting del backend
+### ☁️ Despliegue y DevOps
+- **Vercel** - Hosting del frontend con CDN global
+- **Render** - Hosting del backend con auto-deploy
 - **GitHub** - Control de versiones
 - **GitHub Actions** - CI/CD automático
-
----
-
-## 🚀 Instalación y Configuración
-
-### Prerrequisitos
-- Node.js 18+ 
-- npm o yarn
-- Cuenta de Brevo (para emails)
-- Cuentas de Vercel y Render (para despliegue)
-
-### 1. Clonar el Repositorio
-```bash
-git clone https://github.com/tu-usuario/infracore-landing.git
-cd infracore-landing
-```
-
-### 2. Instalar Dependencias del Frontend
-```bash
-npm install
-```
-
-### 3. Instalar Dependencias del Backend
-```bash
-cd backend
-npm install
-```
-
-### 4. Configurar Variables de Entorno
-
-#### Frontend (.env)
-```env
-VITE_API_URL=https://tu-backend.onrender.com
-VITE_SITE_URL=https://infracore-web.vercel.app
-```
-
-#### Backend (.env)
-```env
-NODE_ENV=production
-PORT=3001
-BREVO_API_KEY=tu_api_key_de_brevo
-EMAIL_FROM=InfraCore <noreply@infracore.com.ar>
-EMAIL_TO=contacto@infracore.com.ar
-CORS_ORIGIN=https://infracore-web.vercel.app
-```
-
-### 5. Ejecutar en Desarrollo
-
-#### Frontend
-```bash
-npm run dev
-# Abre http://localhost:5173
-```
-
-#### Backend
-```bash
-cd backend
-npm run dev
-# Backend en http://localhost:3001
-```
 
 ---
 
@@ -156,15 +96,15 @@ npm run dev
 infraCore-landing/
 ├── 📁 public/
 │   ├── favicon.png
-│   └── images/
+│   └── images/           # Imágenes optimizadas
 ├── 📁 src/
 │   ├── 📁 components/
-│   │   ├── 📁 sections/     # Componentes de secciones
-│   │   └── 📁 ui/          # Componentes reutilizables
-│   ├── 📁 hooks/           # Custom hooks
-│   ├── 📁 styles/          # Estilos globales
-│   ├── 📁 utils/           # Utilidades
-│   └── 📁 types/           # Tipos TypeScript
+│   │   ├── 📁 sections/  # Componentes de secciones (Home, Services, etc.)
+│   │   └── 📁 ui/        # Componentes reutilizables (Navbar, Footer, etc.)
+│   ├── 📁 hooks/         # Custom hooks personalizados
+│   ├── 📁 styles/        # Estilos globales y CSS
+│   ├── 📁 utils/         # Utilidades y helpers
+│   └── 📁 types/         # Tipos TypeScript
 ├── 📁 backend/
 │   ├── 📁 src/
 │   │   ├── 📁 middleware/  # Middleware de Express
@@ -179,78 +119,48 @@ infraCore-landing/
 
 ---
 
-## 🌐 Despliegue
+## 🌟 Características Técnicas
 
-### Frontend (Vercel)
-1. Conecta tu repositorio de GitHub a Vercel
-2. Configura las variables de entorno
-3. Deploy automático en cada push
+### 🎨 Frontend
+- ⚡ **Vite**: Build tool ultra-rápido con HMR
+- 🎨 **Tailwind CSS**: Utility-first CSS con diseño responsivo
+- 📱 **Mobile-First**: Diseño optimizado para móviles
+- 🔄 **React Router**: Navegación SPA fluida
+- 🎭 **Animaciones**: Transiciones suaves y profesionales
+- 🔍 **SEO**: Meta tags optimizados y estructura semántica
 
-### Backend (Render)
-1. Conecta tu repositorio de GitHub a Render
-2. Configura las variables de entorno
-3. Deploy automático en cada push
-
-### URLs de Producción
-- **Frontend**: https://infracore-web.vercel.app
-- **Backend**: https://infracore-backend.onrender.com
-- **API Health**: https://infracore-backend.onrender.com/health
-
----
-
-## 🔧 Scripts Disponibles
-
-### Frontend
-```bash
-npm run dev          # Servidor de desarrollo
-npm run build        # Construir para producción
-npm run preview      # Preview de la build
-npm run lint         # Linter de código
-```
-
-### Backend
-```bash
-npm start            # Iniciar servidor
-npm run dev          # Servidor con nodemon
-npm test             # Ejecutar tests
-npm run test:brevo   # Test de integración Brevo
-```
-
----
-
-## 📧 Configuración de Emails
-
-El proyecto utiliza **Brevo** (anteriormente Sendinblue) para el envío de emails:
-
-1. Crea una cuenta en [Brevo](https://www.brevo.com)
-2. Obtén tu API key en Settings > SMTP & API
-3. Configura la variable `BREVO_API_KEY` en Render
-4. Configura `EMAIL_FROM` y `EMAIL_TO`
-
-**Límites gratuitos**: 300 emails/día
+### ⚙️ Backend
+- 🚀 **Express**: Framework web minimalista y eficiente
+- 📧 **Nodemailer**: Envío de emails robusto y confiable
+- 🛡️ **Middleware**: Seguridad y validación de datos
+- 📝 **Logging**: Morgan para logs HTTP detallados
+- 🔒 **Rate Limiting**: Protección contra abuso y spam
+- 🌐 **CORS**: Configuración segura de orígenes cruzados
 
 ---
 
 ## 🔍 SEO y Optimización
 
-### Meta Tags
+### 📊 Meta Tags
 - Títulos optimizados para cada página
 - Descripciones meta personalizadas
 - Open Graph para redes sociales
 - Twitter Cards
 - Schema.org para datos estructurados
 
-### Performance
+### ⚡ Performance
 - Lazy loading de imágenes
 - Compresión de assets
 - Minificación de CSS/JS
 - CDN global (Vercel)
+- Core Web Vitals optimizados
 
-### Accesibilidad
+### ♿ Accesibilidad
 - Textos descriptivos en enlaces
 - Alt text en imágenes
 - Navegación por teclado
 - Contraste de colores optimizado
+- Estructura semántica HTML
 
 ---
 
@@ -261,34 +171,56 @@ El proyecto utiliza **Brevo** (anteriormente Sendinblue) para el envío de email
 - **CORS**: Configuración de orígenes permitidos
 - **Validación**: Sanitización de inputs
 - **HTTPS**: Certificados SSL automáticos
+- **Environment Variables**: Configuración segura
 
 ---
 
-## 📊 Características Técnicas
+## 📊 URLs de Producción
 
-### Frontend
-- ⚡ **Vite**: Build tool ultra-rápido
-- 🎨 **Tailwind CSS**: Utility-first CSS
-- 📱 **Responsive**: Mobile-first design
-- 🔄 **React Router**: SPA navigation
-- 🎭 **Animaciones**: Transiciones suaves
+- **🌐 Frontend**: https://infracore-web.vercel.app
+- **⚙️ Backend**: https://infracore-backend.onrender.com
+- **❤️ Health Check**: https://infracore-backend.onrender.com/health
 
-### Backend
-- 🚀 **Express**: Framework web minimalista
-- 📧 **Nodemailer**: Envío de emails robusto
-- 🛡️ **Middleware**: Seguridad y validación
-- 📝 **Logging**: Morgan para logs HTTP
-- 🔒 **Rate Limiting**: Protección contra abuso
+---
+
+## 🎨 Diseño y UX
+
+### 🎯 Principios de Diseño
+- **Minimalismo**: Interfaz limpia y enfocada
+- **Consistencia**: Patrones de diseño uniformes
+- **Accesibilidad**: Diseño inclusivo para todos los usuarios
+- **Performance**: Experiencia rápida y fluida
+
+### 🎨 Paleta de Colores
+- **Primario**: Azul (#3B82F6) - Confianza y profesionalismo
+- **Secundario**: Cyan (#06B6D4) - Modernidad y tecnología
+- **Neutros**: Slate (#0F172A) - Elegancia y sofisticación
+
+### 📱 Responsive Design
+- **Mobile First**: Optimizado para dispositivos móviles
+- **Breakpoints**: Adaptación fluida a todos los tamaños
+- **Touch Friendly**: Elementos táctiles optimizados
+
+---
+
+## 📧 Integración de Emails
+
+El proyecto utiliza **Brevo** (anteriormente Sendinblue) para el envío de emails:
+
+- ✅ **API Key**: Configuración segura en variables de entorno
+- ✅ **Templates**: Emails profesionales y personalizados
+- ✅ **Rate Limiting**: 300 emails/día en plan gratuito
+- ✅ **Tracking**: Monitoreo de entregas y aperturas
 
 ---
 
 ## 🤝 Contribución
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+Este proyecto está abierto a contribuciones. Si tienes ideas para mejoras o encuentras algún problema, no dudes en:
+
+1. Abrir un issue
+2. Proponer mejoras
+3. Sugerir nuevas funcionalidades
 
 ---
 
@@ -301,9 +233,9 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ## 👨‍💻 Autor
 
 **InfraCore Team**
-- Email: contacto@infracore.com.ar
-- LinkedIn: [InfraCore](https://www.linkedin.com)
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
+- 📧 Email: contacto@infracore.com.ar
+- 💼 LinkedIn: [InfraCore](https://www.linkedin.com)
+- 🐙 GitHub: [@tu-usuario](https://github.com/tu-usuario)
 
 ---
 
