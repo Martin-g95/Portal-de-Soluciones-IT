@@ -93,76 +93,76 @@ export default function ContactForm() {
     handleSubmit,
   } = useContactForm()
 
-  // Funciones de validación personalizadas (coinciden con el backend + seguridad)
-  const validateField = (name: string, value: string): string | null => {
-    // Primero verificar intentos de inyección SQL
-    if (detectSQLInjection(value)) {
-      return 'Entrada sospechosa detectada. No se permiten comandos SQL.'
-    }
+  // Funciones de validación personalizadas (mantenido para futuras mejoras)
+  // const validateField = (name: string, value: string): string | null => {
+  //   // Primero verificar intentos de inyección SQL
+  //   if (detectSQLInjection(value)) {
+  //     return 'Entrada sospechosa detectada. No se permiten comandos SQL.'
+  //   }
 
-    // Verificar intentos de XSS
-    if (detectXSSAttempt(value)) {
-      return 'Entrada sospechosa detectada. No se permiten scripts o HTML.'
-    }
+  //   // Verificar intentos de XSS
+  //   if (detectXSSAttempt(value)) {
+  //     return 'Entrada sospechosa detectada. No se permiten scripts o HTML.'
+  //   }
 
-    // Verificar caracteres de control peligrosos
-    if (/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/.test(value)) {
-      return 'Caracteres no válidos detectados.'
-    }
+  //   // Verificar caracteres de control peligrosos
+  //   if (/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/.test(value)) {
+  //     return 'Caracteres no válidos detectados.'
+  //   }
 
-    switch (name) {
-      case 'name':
-        if (!value.trim()) return 'El nombre es requerido'
-        if (value.trim().length < 2) return 'El nombre debe tener al menos 2 caracteres'
-        if (value.trim().length > 100) return 'El nombre no puede exceder 100 caracteres'
-        if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(value.trim())) return 'El nombre solo puede contener letras y espacios'
-        return null
+  //   switch (name) {
+  //     case 'name':
+  //       if (!value.trim()) return 'El nombre es requerido'
+  //       if (value.trim().length < 2) return 'El nombre debe tener al menos 2 caracteres'
+  //       if (value.trim().length > 100) return 'El nombre no puede exceder 100 caracteres'
+  //       if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(value.trim())) return 'El nombre solo puede contener letras y espacios'
+  //       return null
 
-      case 'email':
-        if (!value.trim()) return 'El email es requerido'
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-        if (!emailRegex.test(value.trim())) return 'Debe ser un email válido'
-        // Verificar que no contenga caracteres peligrosos adicionales en emails
-        if (/[<>()[\]\\,;:\s@"]/g.test(value.replace(/[@.]/g, '').replace(/[a-zA-Z0-9-_]/g, ''))) {
-          return 'El email contiene caracteres no permitidos'
-        }
-        return null
+  //     case 'email':
+  //       if (!value.trim()) return 'El email es requerido'
+  //       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  //       if (!emailRegex.test(value.trim())) return 'Debe ser un email válido'
+  //       // Verificar que no contenga caracteres peligrosos adicionales en emails
+  //       if (/[<>()[\]\\,;:\s@"]/g.test(value.replace(/[@.]/g, '').replace(/[a-zA-Z0-9-_]/g, ''))) {
+  //         return 'El email contiene caracteres no permitidos'
+  //       }
+  //       return null
 
-      case 'company':
-        if (value.trim().length > 100) return 'La empresa no puede exceder 100 caracteres'
-        // Permitir caracteres alfanuméricos, espacios, guiones, puntos y algunos símbolos básicos
-        if (value.trim() && !/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s.\-&()]+$/.test(value.trim())) {
-          return 'La empresa contiene caracteres no permitidos'
-        }
-        return null
+  //     case 'company':
+  //       if (value.trim().length > 100) return 'La empresa no puede exceder 100 caracteres'
+  //       // Permitir caracteres alfanuméricos, espacios, guiones, puntos y algunos símbolos básicos
+  //       if (value.trim() && !/^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s.\-&()]+$/.test(value.trim())) {
+  //         return 'La empresa contiene caracteres no permitidos'
+  //       }
+  //       return null
 
-      case 'phone':
-        if (value.trim() && !/^[\+]?[0-9\s\-\(\)]{7,20}$/.test(value.trim())) {
-          return 'El teléfono debe tener entre 7 y 20 dígitos'
-        }
-        return null
+  //     case 'phone':
+  //       if (value.trim() && !/^[\+]?[0-9\s\-\(\)]{7,20}$/.test(value.trim())) {
+  //         return 'El teléfono debe tener entre 7 y 20 dígitos'
+  //       }
+  //       return null
 
-      case 'service':
-        if (value.trim().length > 100) return 'El servicio no puede exceder 100 caracteres'
-        return null
+  //     case 'service':
+  //       if (value.trim().length > 100) return 'El servicio no puede exceder 100 caracteres'
+  //       return null
 
-      case 'message':
-        if (!value.trim()) return 'El mensaje es requerido'
-        if (value.trim().length < 10) return 'El mensaje debe tener al menos 10 caracteres'
-        if (value.trim().length > 1000) return 'El mensaje no puede exceder 1000 caracteres'
+  //     case 'message':
+  //       if (!value.trim()) return 'El mensaje es requerido'
+  //       if (value.trim().length < 10) return 'El mensaje debe tener al menos 10 caracteres'
+  //       if (value.trim().length > 1000) return 'El mensaje no puede exceder 1000 caracteres'
         
-        // Permitir caracteres alfanuméricos, espacios, puntuación básica y acentos
-        const allowedChars = /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑüÜ .,;:()¿?¡!\-_@#%&*+={}[\]"'\/\\]+$/
-        if (!allowedChars.test(value)) {
-          return 'El mensaje contiene caracteres no permitidos'
-        }
+  //       // Permitir caracteres alfanuméricos, espacios, puntuación básica y acentos
+  //       const allowedChars = /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑüÜ .,;:()¿?¡!\-_@#%&*+={}[\]"'\/\\]+$/
+  //       if (!allowedChars.test(value)) {
+  //         return 'El mensaje contiene caracteres no permitidos'
+  //       }
         
-        return null
+  //       return null
 
-      default:
-        return null
-    }
-  }
+  //     default:
+  //       return null
+  //   }
+  // }
 
   // Lógica de validación, sanitización, submit y change movida al hook
 
