@@ -6,6 +6,7 @@ dist/
 .env
 .env.*
 backend/.env
+backend/env-ready-to-use.txt
 logs/
 *.log
 .vscode/

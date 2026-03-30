@@ -6,7 +6,7 @@ import { testEmailConnection } from './src/services/emailService.js';
 // Cargar variables de entorno
 dotenv.config();
 
-console.log('🚀 Configurando Backend BaseIT...\n');
+console.log('🚀 Configurando Backend...\n');
 
 // Verificar variables de entorno requeridas
 const requiredEnvVars = [

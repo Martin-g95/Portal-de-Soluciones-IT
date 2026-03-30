@@ -171,7 +171,7 @@ export function useContactForm() {
     }
 
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'https://infracore-backend.onrender.com'
+      const apiUrl = import.meta.env.VITE_API_URL || ''
       const response = await fetch(`${apiUrl}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

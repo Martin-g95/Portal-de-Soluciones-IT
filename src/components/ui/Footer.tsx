@@ -20,9 +20,9 @@ export default function Footer() {
           <div className="col-span-1 md:col-start-5 md:col-span-2">
             <h4 className="text-lg font-semibold mb-3 text-cyan-300">Contacto</h4>
             <div className="space-y-3">
-              <a href="mailto:contacto@infracore.com.ar" className="flex items-start space-x-3 group">
+              <a href="mailto:contacto@tudominio.com" className="flex items-start space-x-3 group">
                 <Mail size={16} strokeWidth={2.25} className="text-cyan-300 shrink-0" />
-                <span className="text-slate-300 text-sm transition-colors group-hover:text-cyan-200">contacto@infracore.com.ar</span>
+                <span className="text-slate-300 text-sm transition-colors group-hover:text-cyan-200">contacto@tudominio.com</span>
               </a>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Av.%20Corrientes%201234%20Piso%2015%20Oficina%20A%20-%20Buenos%20Aires%2C%20Argentina"

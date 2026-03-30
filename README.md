@@ -12,7 +12,7 @@
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 [![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://render.com/)
 
-[🌐 Demo en Vivo](https://infracore-web.vercel.app) | [📧 Contacto](mailto:contacto@infracore.com.ar)
+[🌐 Demo en Vivo](https://tu-dominio.com) | [📧 Contacto](mailto:contacto@tudominio.com)
 
 </div>
 
@@ -177,9 +177,9 @@ infraCore-landing/
 
 ## 📊 URLs de Producción
 
-- **🌐 Frontend**: https://infracore-web.vercel.app
-- **⚙️ Backend**: https://infracore-backend.onrender.com
-- **❤️ Health Check**: https://infracore-backend.onrender.com/health
+- **🌐 Frontend**: https://tu-dominio.com
+- **⚙️ Backend**: https://tu-api.com
+- **❤️ Health Check**: https://tu-api.com/health
 
 ---
 

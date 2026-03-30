@@ -73,7 +73,7 @@ EMAIL_PORT=587
 EMAIL_USER=tu-email@gmail.com
 EMAIL_PASS=tu-app-password
 EMAIL_FROM=InfraCore <tu-email@gmail.com>
-EMAIL_TO=contacto@infracore.com.ar
+EMAIL_TO=contacto@tudominio.com
 
 # Seguridad
 JWT_SECRET=tu-jwt-secret-super-seguro
@@ -257,7 +257,7 @@ CMD ["npm", "start"]
 NODE_ENV=production
 PORT=3001
 EMAIL_HOST=smtp.gmail.com
-EMAIL_USER=produccion@infracore.com.ar
+EMAIL_USER=produccion@tudominio.com
 EMAIL_PASS=app-password-produccion
 ```
 
